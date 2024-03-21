@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 1st Section -->
+        <h1>Password Generator</h1>
+        <!-- 2nd Section -->
+        <div class="display-container">
+            <input type="text" placeholder="Password" data-passwordDisplay>
+            <button data-copy-btn>
+                <span data-copymsg></span>
+                <img src="./copy.svg" alt="copy" width="23" height="23">
+            </button>
+        </div>
+        <!-- 3rd Section -->
+        <div class="input-container">
+
+            <!-- Password Length Section -->
+            <div class="length-container">
+                <p>Password Lenght</p>
+                <p data-lengthNumber>0</p>
+            </div>
+
+            <!-- Slider -->
+            <input type="range" min="1" max="20" step="1" class="slider" data-lengthSlider>
+
+            <!-- Checkboxes -->
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes Uppercase</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes Lowercase</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Includes Numbers</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Includes Symbols</label>
+            </div>
+
+            <!-- Strength Section -->
+            <div class="strength-container">
+                <p>Strength</p>
+                <div data-indicator></div>
+            </div>
+
+            <!-- Generate Password Button -->
+            <button class="generatebtn" onclick="Strength()">Generate Password</button>
+        </div>
+
+        
+
+    </div>
+
+
+
+
+    <script src="./index.js" ></script>
+</body>
+</html>
